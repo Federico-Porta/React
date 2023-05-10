@@ -1,0 +1,30 @@
+.card-body {
+    height: 150px;
+    overflow-y: auto;
+  }
+
+  .card-img-top {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  
+  .card{
+    height: 400px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #888888;
+
+  }
+  
+  .btn{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    margin: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+
+  }

@@ -1,0 +1,101 @@
+[
+  { 
+    "id": 1, 
+    "nombre": "Air Jordan 1 Retro High OG 'Bred Toe'", 
+    "precio": 8990, 
+    "stock":3, 
+    "descripcion": "Las zapatillas Air Jordan 1 Retro High OG 'Bred Toe' son una versión actualizada de las icónicas zapatillas de baloncesto que usó Michael Jordan en los años 80. Esta edición limitada presenta una combinación de colores en rojo, negro y blanco, confeccionada en cuero premium para ofrecer un look y una sensación de lujo. La suela de goma duradera ofrece una tracción excelente en la cancha, mientras que la unidad de amortiguación Air-Sole en el talón ofrece una sensación de comodidad durante todo el día. Con una construcción resistente y un diseño atemporal, estas zapatillas son perfectas para los amantes de la marca Jordan y los coleccionistas de zapatillas de baloncesto.",
+   "categoria": "Zapatillas", 
+    "imagen": "https://images.novelship.com/product/1653919159664_AirJordan17.jpeg?fit=fill&bg=FFFFFF&trim=color&auto=format,compress&q=75&h=400" 
+  },{ 
+    "id": 2,
+     "nombre": "Air Jordan 1 Mid 'Black/White'", 
+     "precio": 7990,
+     "stock":1,
+     "descripcion": "Las zapatillas Air Jordan 1 Mid 'Black/White' son un modelo clásico y versátil de la marca Jordan. Confeccionadas en cuero y cuero sintético para mayor durabilidad, estas zapatillas de baloncesto presentan una combinación de colores en blanco y negro que combina con cualquier look. La icónica marca Jumpman de Jordan se encuentra en el lateral y en la lengüeta, mientras que la suela de goma duradera ofrece una tracción excelente en la cancha. Ya sea para jugar al baloncesto o para salir a la calle, estas zapatillas son una opción atemporal que nunca pasará de moda.", 
+     "categoria": "Zapatillas",
+     "imagen": "https://cdn.shopify.com/s/files/1/1622/9929/products/Jordan1MidBlackWhiteDiamondMen_s1.png?v=1646624084"
+    },{ 
+      "id": 3,
+      "nombre": "Air Jordan 3 Retro 'Black Cement'",
+      "precio": 7000,
+      "stock":20,
+      "descripcion": "Las zapatillas Air Jordan 3 Retro 'Black Cement' son un modelo icónico de la marca Jordan. Confeccionadas en cuero y cuero sintético para mayor durabilidad, estas zapatillas de baloncesto presentan una combinación de colores en negro, gris y rojo que las hace destacar. La suela de goma resistente ofrece una tracción excelente en la cancha, mientras que la unidad de amortiguación Air-Sole en el talón proporciona una sensación de comodidad durante todo el día. Con un diseño elegante y una construcción robusta, estas zapatillas son perfectas para los fanáticos de la marca Jordan que buscan un modelo clásico y duradero.", 
+      "categoria": "Zapatillas",
+      "imagen": "https://images.51microshop.com/9013/product/20201009/Replica_Jordan_3_Retro_Black_Cement_2018_854262_001_1602210523177_2.jpeg"
+    },{ 
+      "id": 4,
+      "nombre": "Air Jordan 4 Retro 'Bred'",
+      "precio": 7990, 
+      "stock":1,
+      "descripcion": "Las zapatillas Air Jordan 4 Retro 'Bred' son una edición limitada de las zapatillas de baloncesto clásicas de la marca Jordan. Confeccionadas en cuero y cuero sintético para mayor durabilidad, estas zapatillas presentan una combinación de colores en rojo, negro y gris que las hace destacar. La suela de goma resistente ofrece una tracción excelente en la cancha, mientras que la unidad de amortiguación Air-Sole en el talón proporciona una sensación de comodidad durante todo el día. Con un diseño llamativo y una construcción robusta, estas zapatillas son perfectas para los coleccionistas de zapatillas de baloncesto y los fanáticos de la marca Jordan.",
+      "categoria": "Zapatillas",
+      "imagen": "https://images.51microshop.com/9013/product/20201223/Replica_Jordan_4_Retro_Bred_2019_308497_060_Top_Version__1608716012053_2.jpg"
+    },{ 
+      "id": 5,
+      "nombre": "Air Jordan 6 Retro 'Infrared'",
+      "precio": 7990,
+      "stock":1,
+      "descripcion": "Las zapatillas Air Jordan 6 Retro 'Infrared' son un modelo clásico de la marca Jordan. Confeccionadas en cuero y cuero sintético para mayor durabilidad, estas zapatillas presentan una combinación de colores en negro, blanco y rojo, con detalles reflectantes en la parte superior para mayor visibilidad. La suela de goma duradera ofrece una tracción excelente en la cancha, mientras que la unidad de amortiguación Air-Sole en el talón proporciona una sensación de comodidad durante todo el día. Con un diseño elegante y una construcción robusta, estas zapatillas son perfectas para los amantes de la marca Jordan que buscan un modelo clásico con un toque de modernidad.", 
+      "categoria": "Zapatillas",
+      "imagen": "https://footwearnews.com/wp-content/uploads/2019/02/jordan-melo-m12-384664_060_e_prem-e1550250676316.jpg?w=700&h=437&crop=1"
+    },{ 
+      "id": 6,
+      "nombre": "Air Jordan 11 Retro 'Concord'",
+      "precio": 6500,
+      "stock": 12, 
+      "descripcion": "Las zapatillas Air Jordan 11 Retro 'Concord' son un modelo icónico de la marca Jordan. Confeccionadas en cuero y malla para mayor transpirabilidad, estas zapatillas de baloncesto presentan una combinación de colores en blanco y negro que las hace destacar. La suela de goma duradera ofrece una tracción excelente en la cancha, mientras que la unidad de amortiguación Air-Sole en el talón proporciona una sensación de comodidad durante todo el día. Con un diseño elegante y una construcción resistente, estas zapatillas son perfectas para los coleccionistas de zapatillas de baloncesto y los fanáticos de la marca Jordan.",
+      "categoria": "Zapatillas",
+      "imagen": "https://cdn.shopify.com/s/files/1/0562/9362/1895/products/air-jordan-11-concord-store-list-5.webp?v=1668048874" 
+    },{ 
+    "id": 12,
+    "nombre": "Sudadera con capucha Jordan Jumpman Air",
+    "precio": 4500,
+    "stock": 15, 
+    "descripcion": "La sudadera con capucha Jordan Jumpman Air es la prenda perfecta para mantenerse abrigado y cómodo en cualquier momento del día. Confeccionada en una mezcla suave de algodón y poliéster, esta sudadera con capucha cuenta con el icónico logotipo Jumpman Air en el pecho y una capucha con cordón ajustable para un ajuste personalizado. Con bolsillos laterales para las manos y un dobladillo y puños acanalados para un ajuste ceñido, esta sudadera es una excelente opción para cualquier fanático de la marca Jordan.",
+    "categoria": "Ropa",
+    "imagen": "https://www.manelsanchez.com/uploads/media/images/jordan-jumpman-air-hoodie-010-12.jpg"
+  },{ 
+    "id": 13,
+    "nombre": "Pantalón de chándal Jordan Jumpman",
+    "precio": 4000,
+    "stock": 20, 
+    "descripcion": "El pantalón de chándal Jordan Jumpman es una prenda esencial para cualquier atuendo de estilo urbano. Confeccionado en una mezcla suave de algodón y poliéster, este pantalón cuenta con un ajuste ceñido con puños acanalados para una comodidad duradera. Con el logotipo Jumpman Air en la cadera y bolsillos laterales para las manos, este pantalón es una excelente opción para cualquier fanático de la marca Jordan.",
+    "categoria": "Ropa",
+    "imagen": "https://www.manelsanchez.com/uploads/media/images/pantalon-jordan-jumpman-air-lightweight-010-1.JPG"
+  },{ 
+    "id": 14,
+    "nombre": "Gorra Jordan Jumpman Classic99",
+    "precio": 2500,
+    "stock": 30, 
+    "descripcion": "La gorra Jordan Jumpman Classic99 es una adición elegante y versátil a cualquier atuendo casual. Confeccionada en una mezcla suave de algodón y poliéster, esta gorra presenta una visera curva y un logotipo Jumpman bordado en la parte frontal. Con un cierre trasero ajustable para un ajuste personalizado, esta gorra es una excelente opción para cualquier fanático de la marca Jordan.",
+    "categoria": "Ropa",
+    "imagen": "https://www.innvictus.com/medias/IN-CW6410-010-1.png?context=bWFzdGVyfGltYWdlc3wxOTEwNjV8aW1hZ2UvcG5nfGltYWdlcy9oYmUvaDVkLzEwMTYzOTQ0OTE0OTc0LnBuZ3xiZjQzYTlhM2RjN2I5NGZjOTY2NGQ3ODljNjg4ZTZjZTA2ZDkzY2U2YWJmNzg1YWI2MDIxZGI5NDBmYTcyYjZl"
+  },{
+    "id": 23,
+    "nombre": "Jersey de manga larga Jordan Jumpman Classics",
+    "precio": 5500,
+    "stock": 8,
+    "descripcion": "Este jersey de manga larga de la marca Jordan es perfecto para cualquier amante de la moda urbana. Confeccionado en algodón suave y transpirable, este jersey cuenta con el icónico logotipo de Jumpman en la parte delantera. Con un ajuste cómodo y moderno, este jersey es ideal para el uso diario o para ocasiones especiales.",
+    "categoria": "Ropa",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3IBxK33lGN_PZh5SS-HCm9N6CHVHkDkyUqvml651vv-VMoOZXKJKF6ptu4axT9WmvxJQ&usqp=CAU"
+    },{
+    "id": 32,
+    "nombre": "Pantalones cortos de baloncesto Jordan Dri-FIT",
+    "precio": 4500,
+    "stock": 15,
+    "descripcion": "Estos pantalones cortos de baloncesto Jordan Dri-FIT son perfectos para aquellos que buscan comodidad y estilo. Fabricados con tecnología Dri-FIT, estos pantalones cortos absorben el sudor para mantenerte fresco y seco durante todo el juego. Cuentan con un ajuste ceñido y una cintura elástica para mayor comodidad y un rango de movimiento completo. Con el icónico logotipo de Jumpman en la parte inferior, estos pantalones cortos son una opción elegante y funcional para cualquier jugador de baloncesto.",
+    "categoria": "Ropa",
+    "imagen": "https://static.nike.com/a/images/t_default/2fc731a1-c21f-46e0-bd67-d215d574774d/jordan-dri-fit-sport-diamond-pantalon-corto-qFZNR9.png"
+    },{
+    "id": 48,
+    "nombre": "Sudadera con capucha Jordan Flight Fleece",
+    "precio": 8000,
+    "stock": 5,
+    "descripcion": "Esta sudadera con capucha de la marca Jordan es perfecta para aquellos que buscan comodidad y estilo. Confeccionada con una mezcla suave y cálida de algodón y poliéster, esta sudadera cuenta con el icónico logotipo de Flight en la parte delantera. Con un ajuste ceñido y una capucha ajustable, esta sudadera es ideal para el uso diario o para mantenerse caliente en días fríos.",
+    "categoria": "Ropa",
+    "imagen": "https://cf.shopee.com.mx/file/0459343acad7a124bb72f5301e603340"
+    }
+]
+
+
