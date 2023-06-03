@@ -1,57 +1,47 @@
-import { useEffect, useState } from 'react'
-import { pedirDatos } from '../../helpers/pedirDatos'
+import { useEffect } from 'react'
+import './ItemListContainer.css'
+import { useState } from 'react'
 import ItemList from '../ItemList/ItemList'
-import { useParams, useSearchParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
+import { collection, getDocs, query, where } from 'firebase/firestore'
+import { db } from '../../firebase/config'
+import Loader from '../Loader/Loader'
 
 export const ItemListContainer = () => {
-    
     const [productos, setProductos] = useState([])
     const [loading, setLoading] = useState(true)
-    const [searchParams] = useSearchParams()
-
-    const buscar = searchParams.get('search')
-
+  
     const { categoriaID } = useParams()
 
     useEffect(() => {
         setLoading(true)
 
-        pedirDatos()
-            .then((data) => {console.log(data)
-                if (!categoriaID) {
-                    setProductos(data)
-                } else {
-                    setProductos( data.filter((el) => el.categoria === categoriaID) )
-                    console.log(data.categoria)
-                }
+        const productosRef = collection(db, "Productos")
+        const q = categoriaID
+                    ? query(productosRef, where("categoria", "==", categoriaID))
+                    : productosRef
+        getDocs(q)
+            .then((res) => {
+                const docs = res.docs.map((doc) => {
+                    return {
+                        ...doc.data(),
+                        id: doc.id
+                    }
+                })
+              
+                setProductos(docs)
             })
-            .catch((err) => console.log(err))
+            .catch()
             .finally(() => setLoading(false))
+
     }, [categoriaID])
-
-    const listado = buscar
-                        ? productos.filter((el) => el.nombre.toLowerCase().includes(buscar.toLowerCase())) 
-                        : productos
-
-    console.log(listado)
 
     return (
         <div className="container my-5">
-            {
-                loading
-                    ? <h2>Cargando...</h2>
-                    : <ItemList items={listado}/>
+            {loading 
+                ? <Loader />
+                : <ItemList items={productos}/>
             }
         </div>
     )
 }
-
-
-
-
-
-
-
-
-
-

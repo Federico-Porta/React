@@ -1,50 +1,35 @@
-.header {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-  }
-  
-  .header__container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .navbar__link {
-    font-size: 18px;
-    color: #555;
-    text-transform: uppercase;
-    text-decoration: none;
-    margin-right: 20px;
-    padding: 5px;
-    transition: all 0.3s ease;
-  }
-  
-  .navbar__link:hover {
-    color: #0077cc;
-    border-bottom: 2px solid #0077cc;
-  }
-  
-  .bg-body-tertiary {
-    background-color: #f3f4f6;
-  }
-  
-  .nav-img {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-    margin-right: 20px;
-  }
-  
+.navbar {
+  background-color: #c5c5c5;
+}
 
-  
+.navbar-brand {
+  color: #5c5c5c;
+}
+
+.navbar-logo {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-color: #7c7c7c;
+}
+
+.nav-item {
+  margin-right: 10px;
+}
+
+.nav-link {
+  color: #2b6138;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #2b6138;
+}
