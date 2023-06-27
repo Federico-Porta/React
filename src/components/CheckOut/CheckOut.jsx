@@ -5,13 +5,14 @@ import { collection, addDoc, doc, updateDoc, getDoc } from "firebase/firestore"
 import { db } from "../../firebase/config"
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import "./CheckOut.css"
+import { Link } from "react-router-dom"
 
 
 
 const CheckOut =() => {
 
     const {cart, totalCompra, vaciarCarrito}=useContext (CartContext)
-    const [orderid, serOrderId] = useState(null)
+    const [orderid, setOrderId] = useState(null)
 
     const[values, setValues] = useState({
         nombre:'',
@@ -60,24 +61,47 @@ const CheckOut =() => {
        
         addDoc(ordencompra, compra)
         .then((doc) =>
-        serOrderId(doc.id)),
-        vaciarCarrito()
-      
-    }
-
-    if(orderid){
-        return(<div>
-            <h2>Su compra se registro con exito</h2>
-            <h3>Su orden es: {orderid}</h3>
-
-        </div>)
+        setOrderId(doc.id))
         
       
     }
 
-    if (cart.length ===0){
-        return <Navigate to ="/"/>
-      }
+    if(orderid){
+        return (
+            <div className="factura">
+                <div className="listado">
+                    <h2>Su compra se registró con éxito</h2>
+              
+          
+              <ul>
+                <li>Cliente: {values.nombre}</li>
+                <li>Email: {values.email}</li>
+                <li>Teléfono: {values.telefono}</li>
+              </ul>
+          
+              <h4>Detalles de la compra:</h4>
+              <ul >_________ <b>Su ID de orden es: {orderid}</b> _________ <br />
+            
+              
+                {cart.map((item) => ( 
+                  <li  className="listafactura" key={item.id}>
+                    <li> <b>Producto: {item.nombre}</b> </li>
+                    <li>Cantidad: {item.cantidad}</li> <li>Precio unitario: {item.precio}</li> --------------------------------------------------------
+                  </li>
+                ))}
+              </ul>
+          
+              <p>Total de la compra: {totalCompra()}</p>
+          
+              <Link className="btn btn-success" to="/" onClick={vaciarCarrito}>Volver al inicio</Link>
+            </div></div>
+              
+          );
+        
+      
+    }
+
+   
     return(
         <div className="check-container">
             <h2>CheckOut</h2>

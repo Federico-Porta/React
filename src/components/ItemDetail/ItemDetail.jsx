@@ -12,7 +12,7 @@ const ItemDetail = ({item}) => {
   const {AgregarAlCarrito, estaencarro } = useContext(CartContext)
 
            
-  const [cantidad, setCantidad,] = useState(1)
+  const [cantidad, setCantidad,] = useState(item.stock > 0 ? 1 : 0)
   const [talle, setTalle,] = useState(null)
 
   const AgregarAlCarro = () =>{

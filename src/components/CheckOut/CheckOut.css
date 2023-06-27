@@ -46,3 +46,17 @@
     cursor: not-allowed;
   }
   
+  .factura {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .listado {
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
