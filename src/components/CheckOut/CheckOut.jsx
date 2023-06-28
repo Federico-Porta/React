@@ -1,9 +1,8 @@
 import { useContext, useState } from "react"
 import { CartContext } from "../contexto/CartContext"
 import { Navigate } from "react-router-dom"
-import { collection, addDoc, doc, updateDoc, getDoc } from "firebase/firestore"
+import { collection, addDoc,writeBatch, getDoc, query, where, documentId, getDocs } from "firebase/firestore"
 import { db } from "../../firebase/config"
-import { Formik, Form, Field, ErrorMessage } from 'formik'
 import "./CheckOut.css"
 import { Link } from "react-router-dom"
 
@@ -30,8 +29,40 @@ const CheckOut =() => {
                 [e.target.name]: e.target.value})
     }
 
-    const handlesumbit = (e) => {
+    const handlesumbit = async (e) => {
         e.preventDefault()
+
+
+        if (!values.nombre || values.nombre.length < 3 || values.nombre.length > 12) {
+            alert("El campo nombre es obligatorio y debe tener entre 3 y 12 caracteres.");
+            return;
+          }
+        
+          if (!values.direccion || values.direccion.length < 3 || values.direccion.length > 12) {
+            alert("El campo dirección es obligatorio y debe tener entre 3 y 12 caracteres.");
+            return;
+          }
+        
+          if (!values.email || values.email.length < 3 ) {
+            alert("El campo email es obligatorio para poder enviar los datos de facturacion");
+            return;
+          }
+        
+          if (!values.telefono || !/^\d+$/.test(values.telefono)) {
+            alert("El campo teléfono es obligatorio y debe contener solo números.");
+            return;
+          }
+        
+          if (!values.pais || values.pais.length < 3 || values.pais.length > 20) {
+            alert("El campo país es obligatorio y debe tener entre 3 y 20 caracteres.");
+            return;
+          }
+        
+          if (!values.ciudad || values.ciudad.length < 3 || values.ciudad.length > 20) {
+            alert("El campo ciudad es obligatorio y debe tener entre 3 y 20 caracteres.");
+            return;
+          }
+        
 
         const compra ={
             client:values,
@@ -40,31 +71,48 @@ const CheckOut =() => {
 
         }
        
-        compra.items.forEach((item) =>
-        {
-            const itemref = doc(db,"Productos", item.id)
+        const batch = writeBatch(db)
+        const prodref = collection (db, "Productos")
+        const orderref = collection(db,"compras")
+        const sinstock = []
 
-            getDoc(itemref)
-            .then((doc) => {
-
-                if(doc.data().stock>= item.cantidad){
-                   updateDoc(itemref,{
-                    
-                    stock: doc.data().stock - item.cantidad
-                    })   
-                }else{ alert("no hay mas stock del producto que deseas" + item.nombre+" solo quedan" +doc.data.stock())}
-                 
-            })           
-        })
-
-        const ordencompra = collection(db, "compras")
+        const q = query(prodref, where(documentId(), "in", cart.map (item => item.id)))
        
-        addDoc(ordencompra, compra)
-        .then((doc) =>
-        setOrderId(doc.id))
-        
-      
-    }
+            const prod = await getDocs(q)
+            prod.docs.forEach((doc) => {
+                const item = cart.find((i) => i.id === doc.id)
+                
+                const stock = doc.data().stock
+                if(stock>= item.cantidad){
+                    batch.update(doc.ref, {
+                        stock: stock - item.cantidad
+                    })
+                }else { sinstock.push(item)
+
+                }
+            })
+
+                if (sinstock.length ===0){
+                    addDoc(orderref, compra)
+                    .then((doc) => {
+                        batch.commit()
+                        setOrderId(doc.id)
+                    })
+                 
+                    
+                }else{
+                    const prodsinstock = sinstock.map((producto) => producto.nombre);
+                    alert("No hay stock de los siguientes productos: " + prodsinstock.join(", "));
+                    
+                }
+
+
+
+            }
+
+
+
+
 
     if(orderid){
         return (
